@@ -1,3 +1,4 @@
+package futbol;
 public abstract class Futbolista {
     private String nombre;
     private int edad;
@@ -38,8 +39,7 @@ public abstract class Futbolista {
 
     @Override
     public String toString() {
-        return ("El futbolista " + getNombre() + " tiene " + getEdad() +
-                ", y juega de " + getPosicion());
+        return ("El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de " + getPosicion());
     }
 
     public boolean equals(Futbolista f){
