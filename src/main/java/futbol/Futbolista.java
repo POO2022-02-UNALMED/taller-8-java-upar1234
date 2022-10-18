@@ -43,6 +43,9 @@ public abstract class Futbolista {
     }
 
     public boolean equals(Futbolista f){
+        if (this == f){
+            return true;
+        }
         return false;
     }
     public abstract boolean jugarConLasManos(Futbolista f);
