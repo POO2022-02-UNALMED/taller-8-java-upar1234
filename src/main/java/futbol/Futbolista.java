@@ -42,13 +42,9 @@ public abstract class Futbolista {
         return ("El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de " + getPosicion());
     }
 
-    public boolean equals(Futbolista f){
-        if (this == f){
-            return true;
-        }
-        return false;
-    }
-    public abstract boolean jugarConLasManos(Futbolista f);
+    public boolean equals(Futbolista f) {
+        return this==f;}
+    public abstract boolean jugarConLasManos();
 
 
 

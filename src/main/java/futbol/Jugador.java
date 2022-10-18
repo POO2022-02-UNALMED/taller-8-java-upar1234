@@ -17,29 +17,34 @@ public class Jugador extends Futbolista {
         this.dorsal = 7;
     }
 
-    //Getters and setters
     public byte getDorsal() {
         return dorsal;
     }
+
     public void setDorsal(byte dorsal) {
         this.dorsal = dorsal;
     }
+
     public short getGolesMarcados() {
         return golesMarcados;
     }
+
     public void setGolesMarcados(short golesMarcados) {
         this.golesMarcados = golesMarcados;
     }
 
 
     @Override
-    public String toString(){
-        return ("El futbolista "+getNombre()+" tiene "+getEdad()+", y juega de "+getPosicion()+" con el dorsal "+dorsal+". Ha marcado "+golesMarcados);
+    public String toString() {
+        return ("El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de " + getPosicion() + " con el dorsal " + dorsal + ". Ha marcado " + golesMarcados);
     }
-    public boolean jugarConLasManos(Futbolista f){
-        if (f.getPosicion()=="Portero"){
-            return true;
-        }
+
+    public int compareTo(Object futbol) {
+        Jugador juga = (Jugador) futbol;
+        return this.getEdad() - juga.getEdad();
+    }
+
+    public boolean jugarConLasManos() {
         return false;
     }
 

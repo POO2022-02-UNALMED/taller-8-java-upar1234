@@ -14,10 +14,8 @@ public class Portero extends Futbolista{
         return("El futbolista "+getNombre()+" tiene "+getEdad()+ ", y juega de "+getPosicion()+" con el dorsal "+dorsal+ ". Le han marcado"+golesRecibidos);
     }
 
-    public boolean jugarConLasManos(Futbolista f){
-        if (f.getPosicion()=="Portero"){
-            return true;
-        }
-        return false;
-    }
+    public boolean jugarConLasManos() {
+        return true;}
+
 }
+
