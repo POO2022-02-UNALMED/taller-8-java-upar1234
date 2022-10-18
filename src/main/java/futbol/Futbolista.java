@@ -37,7 +37,6 @@ public abstract class Futbolista {
     }
 
 
-    @Override
     public String toString() {
         return ("El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de " + getPosicion());
     }
