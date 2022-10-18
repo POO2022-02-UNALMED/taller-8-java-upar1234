@@ -35,8 +35,7 @@ public abstract class Futbolista {
     public String getPosicion() {
         return posicion;
     }
-
-
+    
     public String toString() {
         return ("El futbolista " + getNombre() + " tiene " + getEdad() + ", y juega de " + getPosicion());
     }
